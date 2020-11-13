@@ -48,7 +48,7 @@ describe("Navigation", () => {
     });
   });
 
-  describe("From the Movie Details page ", () => {
+ /* describe("From the Movie Details page ", () => {
     beforeEach(() => {
       cy.visit(`/movies/${movieId}`);
     });
@@ -57,7 +57,7 @@ describe("Navigation", () => {
       cy.url().should("include", `/movies/${movieId}/reviews`);
       cy.contains("Hide Reviews").click();
       cy.url().should("not.include", `/movies/${movieId}/reviews`);
-    });
+    });*/
     it("navigate to the full review page when a 'Full Review' link is clicked", () => {
       // TODO
     });
@@ -90,4 +90,3 @@ describe("Navigation", () => {
           // TODO
         });
       });
-    });
